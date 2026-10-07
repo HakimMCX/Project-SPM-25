@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.header{
+width: 100%;
+height: 380px;
+padding: 15px ;
+background: url('gambar/banner.png');
+border: 2px solid rgba(255, 255, 255, .2);
+border-radius: 40px;
+background-size: cover;
+color: black;
+text-align: center;
+}
+
+#butemcx{
+    background-color: rgb(79, 43, 0);    
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: purple;
+}
+
+#signup{
+    margin: 0px 85px;
+}
+
+#isimcx{
+    cursor: text;
+    padding: 6px 5px;
+    border-radius: 15px;
+    width: 70%;
+}
+
+#menu {
+width: 20%;
+padding: 10px;
+left: 1%;
+float: left;
+}
+/*UNTUK PAPARAN ISI LAMAN */
+#isi{
+width: 80%;
+padding: 10px;
+left: 1%;
+float: left;
+}
+/*UNTUK BUTANG */
+button{
+background-color: #5a475a;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+}
+/*UNTUK ANIMASI BUTANG */
+button:hover {
+background-color: #744f4f;
+}
+
+/*UNTUK PAPARAN TABLE */
+table { width: 80%;
+border-collapse: collapse;
+}
+th {text-align: left; }
+th, td { padding: 5px;
+border-bottom: 10px solid transparent;
+background-color: #6b3e00;
+color: black;
+background-clip: padding-box;
+}
+/*UNTUK FUNGSI CETAKAN */
+@media print{
+.header, select, form, #menu, #sembunyi, button
+{display: none;}
+#printarea, div {
+top:0;
+left:1%;
+padding:0;
+width: 100%;
+}
+}
+/*UNTUK FONT */
+html {        
+    background: url('gambar/wood2.jpg');
+    font-family: "Poppins", sans-serif;
+}
+/*UNTUK BACKGROUND */
+body {
+    height: max-content;
+    margin: 10;
+    padding: 0;        
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    backdrop-filter: blur(2px);
+    padding: 20px 45px 20px 20px;
+}
+/*UNTUK WRAP */
+.wrapper{
+display:flex;
+flex-direction:row;
+justify-content:left;
+flex-wrap: wrap;
+}
+/*UNTUK KAD PRODUK */
+.product-card {    
+border: 1px solid;
+border-radius: 2px;
+width: 200px;
+margin: 5px;
+padding: 10px;
+background-color: #57465cc7;
+text-align: center;
+}
+/*UNTUK SAIZ IMEJ */
+.product-image {
+width: 50%;
+height: auto;
+}
+/*UNTUK SAIZ DAN WARNA FONT */
+p{
+font-size: 12px;
+color: #000000;
+margin: 2px 0;
+}
+
+/*SEMUA BARIS */
+* {
+box-sizing: border-box;
+}
+/* PAPARAN */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+/*RESPONSIVE SCREEN*/
+@media screen and (max-width: 600px) {
+#menu,#isi {
+width: 100%;
+}
+}
+
